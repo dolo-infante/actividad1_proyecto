@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destinos Argentinos | Destinos</title>
+  <link rel="stylesheet" href="estilosIA.css">
+</head>
+<body>
+
+  <header class="encabezado">
+    <div class="marca">
+      <span class="icono">🧭</span>
+      <div>
+        <h1>Destinos Argentinos</h1>
+        <p class="lema">Playa y montaña, elegí tu próxima escapada</p>
+      </div>
+    </div>
+    <nav class="navegacion">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="destinos.html" class="activo">Destinos</a></li>
+        <li><a href="nosotros.html">Quiénes somos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contenido">
+
+    <section class="introduccion">
+      <h2>Elegí una categoría</h2>
+      <p>Seleccioná playa o montaña para ver, de forma estática, los destinos disponibles
+         en esa categoría.</p>
+    </section>
+
+    <nav class="selector-categorias">
+      <a href="#playa"><span class="icono">🏖️</span>Playa</a>
+      <a href="#montana"><span class="icono">⛰️</span>Montaña</a>
+    </nav>
+
+    <p class="mensaje-inicial">Tocá "Playa" o "Montaña" arriba para mostrar los destinos de esa categoría.</p>
+
+    <!-- ===================== CATEGORÍA: PLAYA ===================== -->
+    <section id="playa" class="categoria-destinos">
+      <h2>Destinos de playa</h2>
+      <div class="cuadricula-destinos">
+
+        <article class="tarjeta-destino">
+          <img class="foto-destino" src="imagenes/mardel.png" alt="Vista de Mar del Plata">
+          <div class="info-destino">
+            <h3>Mar del Plata</h3>
+            <p class="resena">La ciudad balnearia más popular de Argentina, con playas extensas,
+               una animada vida nocturna y el histórico puerto donde se puede ver a los lobos marinos.</p>
+            <a class="descargar" href="guias/mardel.pdf" download>
+              <span class="icono">⬇️</span>Descargar itinerario (PDF)
+            </a>
+          </div>
+        </article>
+
+        <article class="tarjeta-destino">
+          <img class="foto-destino" src="imagenes/puntadeleste.png" alt="Vista de Punta del Este">
+          <div class="info-destino">
+            <h3>Punta del Este</h3>
+            <p class="resena">Balneario elegante con playas Mansa y Brava, paseos por el puerto
+               y la icónica escultura "La Mano en la Arena".</p>
+            <a class="descargar" href="guias/puntadeleste.pdf" download>
+              <span class="icono">⬇️</span>Descargar itinerario (PDF)
+            </a>
+          </div>
+        </article>
+
+        <article class="tarjeta-destino">
+          <img class="foto-destino" src="imagenes/pinamar.png" alt="Vista de Pinamar">
+          <div class="info-destino">
+            <h3>Pinamar</h3>
+            <p class="resena">Playas rodeadas de bosque de pinos, ideal para combinar descanso,
+               deportes acuáticos y paseos por Cariló.</p>
+            <a class="descargar" href="guias/pinamar.pdf" download>
+              <span class="icono">⬇️</span>Descargar itinerario (PDF)
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===================== CATEGORÍA: MONTAÑA ===================== -->
+    <section id="montana" class="categoria-destinos">
+      <h2>Destinos de montaña</h2>
+      <div class="cuadricula-destinos">
+
+        <article class="tarjeta-destino">
+          <img class="foto-destino" src="imagenes/bariloche.png" alt="Vista de Bariloche">
+          <div class="info-destino">
+            <h3>San Carlos de Bariloche</h3>
+            <p class="resena">Rodeada de lagos y montañas, es un clásico para el trekking,
+               el esquí y el famoso chocolate artesanal.</p>
+            <a class="descargar" href="guias/bariloche.pdf" download>
+              <span class="icono">⬇️</span>Descargar itinerario (PDF)
+            </a>
+          </div>
+        </article>
+
+        <article class="tarjeta-destino">
+          <img class="foto-destino" src="imagenes/mendoza.png" alt="Vista del Cerro Aconcagua">
+          <div class="info-destino">
+            <h3>Cerro Aconcagua</h3>
+            <p class="resena">El pico más alto de América, un desafío para andinistas y un
+               paisaje imponente para quienes prefieren solo contemplarlo.</p>
+            <a class="descargar" href="guias/mendoza.pdf" download>
+              <span class="icono">⬇️</span>Descargar itinerario (PDF)
+            </a>
+          </div>
+        </article>
+
+        <article class="tarjeta-destino">
+          <img class="foto-destino" src="imagenes/sanmartin.png" alt="Vista de San Martín de los Andes">
+          <div class="info-destino">
+            <h3>San Martín de los Andes</h3>
+            <p class="resena">Punto de partida del Circuito de los Siete Lagos, con montañas,
+               bosques nativos y el Cerro Chapelco.</p>
+            <a class="descargar" href="guias/sanmartin.pdf" download>
+              <span class="icono">⬇️</span>Descargar itinerario (PDF)
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="pie">
+    <p>© 2026 Destinos Argentinos — Sitio informativo sin fines comerciales.
+       <a href="nosotros.html">Conocé quién lo mantiene</a>.</p>
+  </footer>
+
+</body>
+</html>

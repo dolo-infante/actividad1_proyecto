@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destinos Argentinos | Contacto</title>
+  <link rel="stylesheet" href="estilosIA.css">
+</head>
+<body>
+
+  <header class="encabezado">
+    <div class="marca">
+      <span class="icono">🧭</span>
+      <div>
+        <h1>Destinos Argentinos</h1>
+        <p class="lema">Playa y montaña, elegí tu próxima escapada</p>
+      </div>
+    </div>
+    <nav class="navegacion">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="destinos.html">Destinos</a></li>
+        <li><a href="nosotros.html">Quiénes somos</a></li>
+        <li><a href="contacto.html" class="activo">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contenido">
+
+    <section class="introduccion">
+      <h2>Contacto</h2>
+      <p>¿Tenés dudas, sugerencias o querés que sumemos un nuevo destino? Escribinos.</p>
+    </section>
+
+    <div class="datos-contacto">
+      <ul>
+        <li>✉️ info@destinosargentinos.example</li>
+        <li>📍 La Plata, Buenos Aires, Argentina</li>
+      </ul>
+    </div>
+
+    <section class="tarjeta-formulario">
+      <form action="mailto:info@destinosargentinos.example" method="post" enctype="text/plain">
+
+        <div class="campo-formulario">
+          <label for="nombre">Nombre y apellido</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+        </div>
+
+        <div class="campo-formulario">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
+        </div>
+
+        <div class="campo-formulario">
+          <label for="destino">Destino de interés</label>
+          <select id="destino" name="destino">
+            <option value="">Seleccioná una opción (opcional)</option>
+            <option value="playa">Playa</option>
+            <option value="montana">Montaña</option>
+            <option value="otro">Otro / No estoy seguro</option>
+          </select>
+        </div>
+
+        <div class="campo-formulario">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" placeholder="Contanos en qué te podemos ayudar" required></textarea>
+        </div>
+
+        <button type="submit" class="boton-enviar">Enviar mensaje</button>
+
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="pie">
+    <p>© 2026 Destinos Argentinos — Sitio informativo sin fines comerciales.
+       <a href="nosotros.html">Conocé quién lo mantiene</a>.</p>
+  </footer>
+
+</body>
+</html>
