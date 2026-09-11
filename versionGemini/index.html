@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinos Turísticos</title>
+    <link rel="stylesheet" href="estilosIA.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">ViajaFácil</div>
+        <nav>
+            <a href="#destinos">Destinos</a>
+            <a href="#nosotros">Quienes Somos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main class="contenedor-principal">
+        <section id="destinos" class="seccion-destinos">
+            <h2>Descubrí tu próximo destino</h2>
+            
+            <!-- Radios ocultos para alternar entre categorías con CSS sin usar JS -->
+            <input type="radio" id="cat-playa" name="categoria" checked>
+            <input type="radio" id="cat-montana" name="categoria">
+
+            <div class="selector-categorias">
+                <label for="cat-playa" class="btn-categoria">Playa</label>
+                <label for="cat-montana" class="btn-categoria">Montaña</label>
+            </div>
+
+            <!-- Grilla de Playa -->
+            <div class="grilla-destinos destinos-playa">
+                <article class="tarjeta-destino">
+                    <img src="imagenes/mardel.png" alt="Mar del Plata">
+                    <div class="contenido-tarjeta">
+                        <h3>Mar del Plata</h3>
+                        <p>Disfrutá de la emblemática costa atlántica, sus amplias playas, gastronomía marina y vida nocturna.</p>
+                        <a href="guias/mardel.pdf" download class="btn-descarga">Descargar Itinerario</a>
+                    </div>
+                </article>
+
+                <article class="tarjeta-destino">
+                    <img src="imagenes/carilo.png" alt="Cariló">
+                    <div class="contenido-tarjeta">
+                        <h3>Cariló</h3>
+                        <p>Bosques pinos que se encuentran con el mar, ideal para el descanso, la tranquilidad y paseos al aire libre.</p>
+                        <a href="guias/carilo.pdf" download class="btn-descarga">Descargar Itinerario</a>
+                    </div>
+                </article>
+
+                <article class="tarjeta-destino">
+                    <img src="imagenes/mina-clavero.png" alt="Mina Clavero">
+                    <div class="contenido-tarjeta">
+                        <h3>Mina Clavero</h3>
+                        <p>Playas de río doradas y aguas cristalinas rodeadas de sierras para disfrutar todo el verano.</p>
+                        <a href="guias/mina-clavero.pdf" download class="btn-descarga">Descargar Itinerario</a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Grilla de Montaña -->
+            <div class="grilla-destinos destinos-montana">
+                <article class="tarjeta-destino">
+                    <img src="imagenes/bariloche.png" alt="Bariloche">
+                    <div class="contenido-tarjeta">
+                        <h3>Bariloche</h3>
+                        <p>Montañas majestuosas, lagos cristalinos y los mejores chocolates artesanales en la Patagonia.</p>
+                        <a href="guias/bariloche.pdf" download class="btn-descarga">Descargar Itinerario</a>
+                    </div>
+                </article>
+
+                <article class="tarjeta-destino">
+                    <img src="imagenes/tilcara.png" alt="Tilcara">
+                    <div class="contenido-tarjeta">
+                        <h3>Tilcara</h3>
+                        <p>Ubicada en la Quebrada de Humahuaca, destacada por sus paisajes coloridos y riqueza cultural ancestral.</p>
+                        <a href="guias/tilcara.pdf" download class="btn-descarga">Descargar Itinerario</a>
+                    </div>
+                </article>
+
+                <article class="tarjeta-destino">
+                    <img src="imagenes/sanmartin.png" alt="San Martín de los Andes">
+                    <div class="contenido-tarjeta">
+                        <h3>San Martín de los Andes</h3>
+                        <p>Aldea de montaña rodeada por el Parque Nacional Lanín, perfecta para senderismo y naturaleza.</p>
+                        <a href="guias/sanmartin.pdf" download class="btn-descarga">Descargar Itinerario</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Información sobre quién mantiene el sitio -->
+        <section id="nosotros" class="seccion-info">
+            <h2>Quiénes Mantenemos el Sitio</h2>
+            <p>Somos un equipo passionado por el turismo local y el desarrollo informático. Nos dedicamos a compilar los mejores itinerarios de viaje para que puedas planificar tus vacaciones sin complicaciones.</p>
+        </section>
+
+        <!-- Formulario de Contacto -->
+        <section id="contacto" class="seccion-contacto">
+            <h2>Contacto</h2>
+            <form class="formulario">
+                <div class="campo">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="campo">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="campo">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn-enviar">Enviar Consulta</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <p>&copy; 2026 ViajaFácil - Promoción Turística. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
